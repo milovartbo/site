@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <title>Таблица</title>
+    <body background="img/bg.jpg">
+       <a href="index.html">Боевые вертолеты</a>
+       <h3><a href="table.html">Список боевых вертолетов</a></h3>
+       <hr>
+       <details open>
+            <summary>График</summary>
+            <form>
+                <p>
+                    <b>Значение по оси OX</b><br>
+                    <input type="radio" name="OX" value="type">Тип<br>
+                    <input type="radio" name="OX" value="country">Страна<br>
+                    <input type="radio" name="OX" value="year">Год
+                </p>
+            
+            <p>
+                <b>Значение по оси OY</b><br>
+                <input type="checkbox" name="OY" value="max">Максимальная скорость<br>
+                <input type="checkbox" name="OY" value="min">Минимальная скорость<br>
+                <input type="checkbox" name="OY" value="count">Количество вертолетов
+            </p>
+            <p><input type="button" value="Построить"></p>
+            </form>
+            <p>Здесь будет график</p>
+        </details> 
+        <details open>
+        <summary>Фильтр</summary>
+        <form>
+            <p>Название: <input type="text" name="name"></p>
+            <p>Тип: <input type="text" name="type"></p>
+            <p>Страна: <input type="text" name="country"></p>
+            <p>Год: от <input type="number" name="yearFrom"> до <input type="number" name="yearTo"></p>
+            <p>Скорость: от <input type="number" name="speedFrom"> до <input type="number" name="speedTo"></p>
+            <p><input type="button" value="Найти"></p>
+        </form>
+        </details>
+        <details open>
+        <summary>Сортировка</summary>
+        <form>
+            <p>Первый уровень:
+                <select name="sort1">
+                    <option>Нет</option>
+                    <option>Название</option>
+                    <option>Тип</option>
+                    <option>Страна</option>
+                    <option>Год</option>
+                    <option>Скорость</option>
+                </select>
+                по убыванию? <input type="checkbox" name="desc1">
+            </p>
+            <p>Второй уровень:
+            <select name="sort2">
+                <option>Нет</option>
+                <option>Название</option>
+                <option>Тип</option>
+                <option>Страна</option>
+                <option>Год</option>
+                <option>Скорость</option>
+            </select>
+            по убыванию? <input type="checkbox" name="desc2">
+            </p>
+            <p>Третий уровень:
+                <select name="sort3">
+                    <option>Нет</option>
+                    <option>Название</option>
+                    <option>Тип</option>
+                    <option>Страна</option>
+                    <option>Год</option>
+                    <option>Скорость</option>
+                </select>
+                по убыванию? <input type="checkbox" name="desc3">
+            </p>
+            <p><input type="button" value="Сортировать"></p>
+        </form>
+    </details>
+    <br>
+    <table border="1" cellpadding="5" width="100%">
+    <caption>Боевые вертолеты</caption>
+    <thead bgcolor="#ffffff">
+    <tr>
+        <th>Название</th>
+        <th>Тип</th>
+        <th>Страна</th>
+        <th>Год</th>
+    <th>Скорость, км/ч</th>
+    </tr>
+    </thead>
+    <tbody bgcolor="#ffffff">
+        <tr><td>Ка-52 Аллигатор</td><td>Ударный</td><td>Россия</td><td>2011</td><td>300</td></tr>
+        <tr><td>Ка-50 Чёрная акула</td><td>Ударный</td><td>Россия</td><td>1995</td><td>315</td></tr>
+        <tr><td>Ми-28Н Ночной охотник</td><td>Ударный</td><td>Россия</td><td>2009</td><td>324</td></tr>
+        <tr><td>Ми-35М</td><td>Ударный</td><td>Россия</td><td>2010</td><td>310</td></tr>
+        <tr><td>Ми-24</td><td>Ударный</td><td>СССР</td><td>1972</td><td>335</td></tr>
+        <tr><td>Ка-29</td><td>Транспортно-боевой</td><td>СССР</td><td>1985</td><td>250</td></tr>
+        <tr><td>Ми-8</td><td>Многоцелевой</td><td>СССР</td><td>1967</td><td>260</td></tr>
+        <tr><td>Ми-4</td><td>Транспортный</td><td>СССР</td><td>1953</td><td>210</td></tr>
+        <tr><td>Ми-2</td><td>Многоцелевой</td><td>СССР / Польша</td><td>1965</td><td>210</td></tr>
+        <tr><td>Ми-6</td><td>Транспортный</td><td>СССР</td><td>1960</td><td>300</td></tr>
+        <tr><td>Ми-26</td><td>Транспортный</td><td>СССР</td><td>1983</td><td>295</td></tr>
+        <tr><td>Ми-14</td><td>Противолодочный</td><td>СССР</td><td>1976</td><td>230</td></tr>
+        <tr><td>Ка-25</td><td>Противолодочный</td><td>СССР</td><td>1965</td><td>220</td></tr>
+        <tr><td>Ка-27</td><td>Противолодочный</td><td>СССР</td><td>1981</td><td>270</td></tr>
+        <tr><td>AH-64 Apache</td><td>Ударный</td><td>США</td><td>1986</td><td>293</td></tr>
+        <tr><td>AH-64E Apache Guardian</td><td>Ударный</td><td>США</td><td>2012</td><td>293</td></tr>
+        <tr><td>AH-1 Cobra</td><td>Ударный</td><td>США</td><td>1967</td><td>277</td></tr>
+        <tr><td>AH-1W SuperCobra</td><td>Ударный</td><td>США</td><td>1986</td><td>315</td></tr>
+        <tr><td>AH-1Z Viper</td><td>Ударный</td><td>США</td><td>2010</td><td>411</td></tr>
+        <tr><td>AH-6 Little Bird</td><td>Лёгкий ударный</td><td>США</td><td>1980</td><td>282</td></tr>
+        <tr><td>OH-58D Kiowa Warrior</td><td>Разведывательно-ударный</td><td>США</td><td>1991</td><td>240</td></tr>
+        <tr><td>OH-58 Kiowa</td><td>Разведывательный</td><td>США</td><td>1969</td><td>222</td></tr>
+        <tr><td>OH-6 Cayuse</td><td>Разведывательный</td><td>США</td><td>1966</td><td>241</td></tr>
+        <tr><td>UH-60 Black Hawk</td><td>Многоцелевой</td><td>США</td><td>1979</td><td>295</td></tr>
+        <tr><td>UH-1 Iroquois</td><td>Многоцелевой</td><td>США</td><td>1959</td><td>220</td></tr>
+        <tr><td>HH-60W Jolly Green II</td><td>Поисково-спасательный</td><td>США</td><td>2020</td><td>290</td></tr>
+        <tr><td>MH-60R Seahawk</td><td>Противолодочный</td><td>США</td><td>2006</td><td>333</td></tr>
+        <tr><td>CH-47 Chinook</td><td>Транспортный</td><td>США</td><td>1962</td><td>315</td></tr>
+        <tr><td>CH-53E Super Stallion</td><td>Транспортный</td><td>США</td><td>1981</td><td>315</td></tr>
+        <tr><td>SH-3 Sea King</td><td>Противолодочный</td><td>США</td><td>1961</td><td>267</td></tr>
+        <tr><td>Eurocopter Tiger</td><td>Ударный</td><td>Франция / Германия</td><td>2003</td><td>290</td></tr>
+        <tr><td>AgustaWestland AW129 Mangusta</td><td>Ударный</td><td>Италия</td><td>1990</td><td>278</td></tr>
+        <tr><td>Westland Lynx</td><td>Многоцелевой</td><td>Великобритания</td><td>1977</td><td>324</td></tr>
+        <tr><td>AgustaWestland AW159 Wildcat</td><td>Многоцелевой</td><td>Великобритания</td><td>2014</td><td>291</td></tr>
+        <tr><td>SA 342 Gazelle</td><td>Лёгкий многоцелевой</td><td>Франция</td><td>1973</td><td>310</td></tr>
+        <tr><td>SA 330 Puma</td><td>Транспортный</td><td>Франция</td><td>1969</td><td>273</td></tr>
+        <tr><td>SA 321 Super Frelon</td><td>Транспортный</td><td>Франция</td><td>1966</td><td>275</td></tr>
+        <tr><td>Alouette III</td><td>Лёгкий многоцелевой</td><td>Франция</td><td>1961</td><td>220</td></tr>
+        <tr><td>Eurocopter EC725 Caracal</td><td>Поисково-спасательный</td><td>Франция</td><td>2006</td><td>324</td></tr>
+        <tr><td>NH90</td><td>Многоцелевой</td><td>Франция / Германия / Италия</td><td>2006</td><td>300</td></tr>
+        <tr><td>MBB Bo 105 PAH-1</td><td>Противотанковый</td><td>Германия</td><td>1979</td><td>242</td></tr>
+        <tr><td>PZL W-3 Sokół</td><td>Многоцелевой</td><td>Польша</td><td>1986</td><td>260</td></tr>
+        <tr><td>Z-10</td><td>Ударный</td><td>Китай</td><td>2012</td><td>270</td></tr>
+        <tr><td>Z-19</td><td>Разведывательно-ударный</td><td>Китай</td><td>2014</td><td>260</td></tr>
+        <tr><td>Z-9</td><td>Многоцелевой</td><td>Китай</td><td>1981</td><td>315</td></tr>
+        <tr><td>HAL LCH Prachand</td><td>Ударный</td><td>Индия</td><td>2022</td><td>330</td></tr>
+        <tr><td>HAL Rudra</td><td>Вооружённый многоцелевой</td><td>Индия</td><td>2013</td><td>280</td></tr>
+        <tr><td>Kawasaki OH-1</td><td>Разведывательный</td><td>Япония</td><td>2000</td><td>280</td></tr>
+        <tr><td>TAI T129 ATAK</td><td>Ударный</td><td>Турция</td><td>2014</td><td>280</td></tr>
+        <tr><td>Denel AH-2 Rooivalk</td><td>Ударный</td><td>ЮАР</td><td>1999</td><td>309</td></tr>      
+    </tbody>
+    </table>
+
+    <hr>
+    </body>
+    <footer>
+        <p>Б9124-09.03.04 Милов</p>
+    </footer>
+</html>
